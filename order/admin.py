@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Order, Project, Kind
 
-class ProjectInline(admin.StackedInline):
+class ProjectInline(admin.TabularInline):
     model = Project
     extra = 10
 
